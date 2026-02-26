@@ -1,0 +1,19 @@
+GIT COMMANDS - run these 3 in order every time you make changes
+
+git add .                       Stage all new and changed files
+git commit -m "your message"    Save a snapshot with a description of what changed
+git push                        Upload your commits to GitHub
+
+
+CHECKING STATUS
+
+git status                      See what files have changed or are staged
+git log --oneline               See a short history of your commits
+git remote -v                   See which GitHub repo you are connected to
+
+
+TROUBLESHOOTING
+
+git rm --cached -f <folder>                     Untrack a folder Git is treating as a submodule
+Remove-Item -Recurse -Force <folder/.git>       Delete a hidden .git folder inside a subfolder
+git restore --staged <file>                     Unstage a file you accidentally added
